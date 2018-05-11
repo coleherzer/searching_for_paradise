@@ -1,0 +1,6 @@
+<h1>Letters from paradise</h1>
+<p>Input your email below to receive a quote from the Hobbit (aka paradise).</p>
+<%= form_with url: letters_path do |f| %>
+  <%= f.email_field :email, placeholder: 'Enter your email' %>
+  <%= f.submit 'submit' %>
+<% end %>
